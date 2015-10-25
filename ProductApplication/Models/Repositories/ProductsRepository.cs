@@ -10,11 +10,11 @@ namespace ProductApplication.Models.Repositories
     {
         private static List<Product> _products = new List<Product>()
         {
-            ProductFactory.CreateProduct(1, "Dell M2442", "Monitor"),
-            ProductFactory.CreateProduct(2, "Genius Keyboard K107", "Keyboard"),
-            ProductFactory.CreateProduct(3, "Logitech MX510", "Mouse")
+            ProductFactory.CreateProduct(1, "Dell M2442", "Monitor",400, quantity:10),
+            ProductFactory.CreateProduct(2, "Genius Keyboard K107", "Keyboard",100, quantity:5),
+            ProductFactory.CreateProduct(3, "Logitech MX510", "Mouse",50,quantity:1)
         };
-        
+
         /// <summary>
         /// Return the in memory list of products that acts as a table in the database
         /// </summary>

@@ -58,7 +58,27 @@ textarea {
         margin-top: 5px;
     }
 
+    .product .quantity {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+        .product .quantity .unit {
+            font-weight: bold;
+        }
+
+        .product .quantity .unit.in-stock {
+            color: #339933;
+        }
+
+        .product .quantity .unit.warning-stock {
+            color: #da9b0c;
+        }
+
+        .product .quantity .unit.critical-stock {
+            color: #f01717;
+        }
+
     .product .actions {
         margin-top: 20px;
-        
     }
