@@ -1,0 +1,23 @@
+﻿@model System.Collections.Generic.List<ProductApplication.Models.Entities.Product>
+
+<h2>Products</h2>
+
+<div class="row">
+    @foreach (var product in Model)
+    {
+        <div class="col-lg-4  col-md-6 col-xs-12">
+            <div class="product">
+                <div class="name">@product.Name</div>
+                <div class="category">@product.Category</div>
+                <div class="description">@product.Description</div>
+                <div class="price">$@product.Price </div>
+
+                <div class="actions">
+                    <button class="btn btn-sm btn-primary">Buy!</button>
+                    <button class="btn btn-sm btn-success">Details</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
