@@ -26,5 +26,18 @@ namespace ProductApplication.Models.Services
                 return null;
             }
         }
+
+        public Product Create(Product productEntity)
+        {
+            try
+            {
+                var createdProduct = _productRepository.CreateProduct(productEntity);
+                return createdProduct;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
     }
 }
