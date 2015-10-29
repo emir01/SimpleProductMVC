@@ -1,17 +1,17 @@
-﻿using System.Web.Mvc;
-using PA.Web.Models.Services;
-using PA.Web.ViewModels.Mappings;
-using PA.Web.ViewModels.Product;
+﻿using System.Linq;
+using System.Web.Mvc;
+using PA.Data.Interfaces;
+using PA.Web.ViewModels.ProductViewModels;
 
 namespace PA.Web.Controllers
 {
     public class ProductsController : Controller
     {
-        private ProductService _productService;
+        private readonly IProductRepository _productRepository;
 
-        public ProductsController()
+        public ProductsController(IProductRepository productRepository)
         {
-            _productService = new ProductService();
+            _productRepository = productRepository;
         }
 
         // GET: Products
@@ -19,11 +19,11 @@ namespace PA.Web.Controllers
         {
             ViewBag.Title = "Products Page";
 
-            var products = _productService.GetAllProducts();
+            var products = _productRepository.QueryProducts().ToList();
 
             return View(products);
         }
-        
+
         // GET: /Products/Create
         [HttpGet]
         public ActionResult Create()
@@ -35,13 +35,7 @@ namespace PA.Web.Controllers
         [HttpPost]
         public ActionResult Create(ProductEditViewModel product)
         {
-            var productEntity = ProductMappings.FromEditProductViewModel(product);
-
-            var createdProduct = _productService.Create(productEntity);
-
-            var createdViewModel = ProductMappings.FromProduct(createdProduct);
-
-            return View(createdViewModel);
+            return Content("ok");
         }
     }
 }
