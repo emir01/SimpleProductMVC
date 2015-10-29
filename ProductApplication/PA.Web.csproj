@@ -143,6 +143,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\ProductRenderHelpers.cs" />
+    <Compile Include="Infrastructure\TitleActionFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\Mappings\ProductMappings.cs" />
     <Compile Include="ViewModels\ProductViewModels\ProductEditViewModel.cs" />
