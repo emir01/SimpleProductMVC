@@ -1,10 +1,9 @@
-﻿using System.Web.Configuration;
-using System.Web.Mvc;
-using ProductApplication.Models.Services;
-using ProductApplication.ViewModels;
-using ProductApplication.ViewModels.Mappings;
+﻿using System.Web.Mvc;
+using PA.Web.Models.Services;
+using PA.Web.ViewModels.Mappings;
+using PA.Web.ViewModels.Product;
 
-namespace ProductApplication.Controllers
+namespace PA.Web.Controllers
 {
     public class ProductsController : Controller
     {

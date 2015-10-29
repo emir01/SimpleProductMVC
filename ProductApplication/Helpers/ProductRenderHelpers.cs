@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace ProductApplication.Helpers
+namespace PA.Web.Helpers
 {
     public static class ProductRenderHelpers
     {

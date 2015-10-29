@@ -1,12 +1,12 @@
-﻿using ProductApplication.Models.Entities;
+﻿using PA.Web.ViewModels.Product;
 
-namespace ProductApplication.ViewModels.Mappings
+namespace PA.Web.ViewModels.Mappings
 {
     public static class ProductMappings
     {
-        public static Product FromEditProductViewModel(ProductEditViewModel viewModel)
+        public static Models.Entities.Product FromEditProductViewModel(ProductEditViewModel viewModel)
         {
-            return new Product()
+            return new Models.Entities.Product()
             {
                 Id = viewModel.Id ?? 0,
                 Quantity = viewModel.Quantity,
@@ -17,7 +17,7 @@ namespace ProductApplication.ViewModels.Mappings
             };
         }
 
-        public static ProductEditViewModel FromProduct(Product createdProduct)
+        public static ProductEditViewModel FromProduct(Models.Entities.Product createdProduct)
         {
             return new ProductEditViewModel()
             {

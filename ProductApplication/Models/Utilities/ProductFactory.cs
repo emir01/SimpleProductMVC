@@ -1,6 +1,6 @@
-﻿using ProductApplication.Models.Entities;
+﻿using PA.Web.Models.Entities;
 
-namespace ProductApplication.Models.Utilities
+namespace PA.Web.Models.Utilities
 {
     public static class ProductFactory
     {

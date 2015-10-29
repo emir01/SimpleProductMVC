@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ProductApplication.ViewModels
+namespace PA.Web.ViewModels.Product
 {
     public class ProductEditViewModel
     {

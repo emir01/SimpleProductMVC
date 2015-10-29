@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using ProductApplication.Models.Entities;
-using ProductApplication.Models.Repositories;
+using PA.Web.Models.Entities;
+using PA.Web.Models.Repositories;
 
-namespace ProductApplication.Models.Services
+namespace PA.Web.Models.Services
 {
     public class ProductService
     {

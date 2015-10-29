@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using ProductApplication.Models.Entities;
-using ProductApplication.Models.Utilities;
+using PA.Web.Models.Entities;
+using PA.Web.Models.Utilities;
 
-namespace ProductApplication.Models.Repositories
+namespace PA.Web.Models.Repositories
 {
     public class ProductsRepository
     {
