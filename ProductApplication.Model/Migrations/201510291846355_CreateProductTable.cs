@@ -1,8 +1,7 @@
-namespace PA.Model.Migrations
+using System.Data.Entity.Migrations;
+
+namespace PA.DataModel.Migrations
 {
-    using System;
-    using System.Data.Entity.Migrations;
-    
     public partial class CreateProductTable : DbMigration
     {
         public override void Up()

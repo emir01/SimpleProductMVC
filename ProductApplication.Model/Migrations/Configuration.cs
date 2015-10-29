@@ -1,15 +1,16 @@
-namespace PA.Model.Migrations
-{
-    using System.Data.Entity.Migrations;
+using System.Data.Entity.Migrations;
+using PA.DataModel.Context;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<PA.Model.Context.ShopContext>
+namespace PA.DataModel.Migrations
+{
+    internal sealed class Configuration : DbMigrationsConfiguration<ShopContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(PA.Model.Context.ShopContext context)
+        protected override void Seed(ShopContext context)
         {
             //  This method will be called after migrating to the latest version.
             

@@ -1,4 +1,4 @@
-﻿namespace PA.Model.Entities
+﻿namespace PA.DataModel.Entities
 {
     public class Product : BaseEntity
     {
