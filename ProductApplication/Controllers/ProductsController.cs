@@ -1,17 +1,16 @@
-﻿using System.Linq;
-using System.Web.Mvc;
-using PA.Data.Interfaces;
+﻿using System.Web.Mvc;
+using PA.Business.Interfaces;
 using PA.Web.ViewModels.ProductViewModels;
 
 namespace PA.Web.Controllers
 {
     public class ProductsController : Controller
     {
-        private readonly IProductRepository _productRepository;
+        private readonly IProductService _productService;
 
-        public ProductsController(IProductRepository productRepository)
+        public ProductsController(IProductService productService)
         {
-            _productRepository = productRepository;
+            _productService = productService;
         }
 
         // GET: Products
@@ -19,9 +18,9 @@ namespace PA.Web.Controllers
         {
             ViewBag.Title = "Products Page";
 
-            var products = _productRepository.QueryProducts().ToList();
-
-            return View(products);
+            var productsResult = _productService.GetProducts();
+            
+            return View(productsResult);
         }
 
         // GET: /Products/Create

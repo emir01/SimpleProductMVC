@@ -20,7 +20,7 @@ namespace PA.IoC.Container
             try
             {
                 kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
-                
+
                 // check if the optional web modules action is provided
                 // if so call it and allow client code to register web related configurations
                 if (bindWebModules != null)
@@ -45,6 +45,7 @@ namespace PA.IoC.Container
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Load(new DataAccessModule());
+            kernel.Load(new BusinessLogicModule());
         }
     }
 }

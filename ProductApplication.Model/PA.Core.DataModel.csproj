@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3F27B915-1EB6-421C-BBA9-2197727787B1}</ProjectGuid>
+    <ProjectGuid>{88A02733-F1EC-49A7-9D40-53D1160A6646}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PA.IoC.Container</RootNamespace>
-    <AssemblyName>PA.IoC.Container</AssemblyName>
+    <RootNamespace>PA.Core.DataModel</RootNamespace>
+    <AssemblyName>PA.Core.DataModel</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -39,14 +39,6 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.3.2.0.0\lib\net45-full\Ninject.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Ninject.Web.Common, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.Web.Common.3.2.0.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -58,36 +50,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KernelConstruction.cs" />
-    <Compile Include="Modules\BusinessLogicModule.cs" />
-    <Compile Include="Modules\DataAccessModule.cs" />
+    <Compile Include="Context\ShopContext.cs" />
+    <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\Product.cs" />
+    <Compile Include="Migrations\201510291846355_CreateProductTable.cs" />
+    <Compile Include="Migrations\201510291846355_CreateProductTable.Designer.cs">
+      <DependentUpon>201510291846355_CreateProductTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201510291846355_CreateProductTable.resx">
+      <DependentUpon>201510291846355_CreateProductTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PA.Business.Interfaces\PA.Business.Interfaces.csproj">
-      <Project>{20cc62cf-640d-4959-adec-57366405557b}</Project>
-      <Name>PA.Business.Interfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PA.Business.Logic\PA.Business.Logic.csproj">
-      <Project>{2051b9e1-a782-4017-be12-50c50f63eabb}</Project>
-      <Name>PA.Business.Logic</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PA.Data.Access\PA.Data.Access.csproj">
-      <Project>{8A882E00-6720-4A3D-907F-6C4869389EBD}</Project>
-      <Name>PA.Data.Access</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PA.DataAccess.Interfaces\PA.Data.Interfaces.csproj">
-      <Project>{9F3FA0BB-8FEB-48BA-9C9A-7C05F8D05BFC}</Project>
-      <Name>PA.Data.Interfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ProductApplication.Model\PA.Core.DataModel.csproj">
-      <Project>{88A02733-F1EC-49A7-9D40-53D1160A6646}</Project>
-      <Name>PA.Core.DataModel</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,8 +1,8 @@
 using System.Data.Entity.Migrations;
-using PA.DataModel.Context;
-using PA.DataModel.Entities;
+using PA.Core.DataModel.Context;
+using PA.Core.DataModel.Entities;
 
-namespace PA.DataModel.Migrations
+namespace PA.Core.DataModel.Migrations
 {
     internal sealed class Configuration : DbMigrationsConfiguration<ShopContext>
     {

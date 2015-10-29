@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace PA.DataModel.Entities
+namespace PA.Core.DataModel.Entities
 {
     public class BaseEntity
     {

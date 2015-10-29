@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
-using PA.DataModel.Entities;
+using PA.Core.DataModel.Entities;
 
-namespace PA.DataModel.Context
+namespace PA.Core.DataModel.Context
 {
     public class ShopContext : DbContext
     {

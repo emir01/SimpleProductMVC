@@ -1,7 +1,7 @@
 ﻿using System.Linq;
+using PA.Core.DataModel.Context;
+using PA.Core.DataModel.Entities;
 using PA.Data.Interfaces;
-using PA.DataModel.Context;
-using PA.DataModel.Entities;
 
 namespace PA.Data.Access.Repositories
 {

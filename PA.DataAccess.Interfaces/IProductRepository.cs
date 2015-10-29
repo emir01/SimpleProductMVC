@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using PA.DataModel.Entities;
+using PA.Core.DataModel.Entities;
 
 namespace PA.Data.Interfaces
 {

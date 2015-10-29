@@ -1,4 +1,4 @@
-﻿using PA.DataModel.Entities;
+﻿using PA.Core.DataModel.Entities;
 using PA.Web.ViewModels.ProductViewModels;
 
 namespace PA.Web.ViewModels.Mappings

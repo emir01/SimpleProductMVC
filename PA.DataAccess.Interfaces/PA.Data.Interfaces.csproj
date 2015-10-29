@@ -45,9 +45,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProductApplication.Model\PA.DataModel.csproj">
+    <ProjectReference Include="..\ProductApplication.Model\PA.Core.DataModel.csproj">
       <Project>{88A02733-F1EC-49A7-9D40-53D1160A6646}</Project>
-      <Name>PA.DataModel</Name>
+      <Name>PA.Core.DataModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

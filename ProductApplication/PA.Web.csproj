@@ -199,17 +199,21 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PA.DataAccess.Interfaces\PA.Data.Interfaces.csproj">
-      <Project>{9F3FA0BB-8FEB-48BA-9C9A-7C05F8D05BFC}</Project>
-      <Name>PA.Data.Interfaces</Name>
+    <ProjectReference Include="..\PA.Business.Interfaces\PA.Business.Interfaces.csproj">
+      <Project>{20cc62cf-640d-4959-adec-57366405557b}</Project>
+      <Name>PA.Business.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PA.Core.Infrastructure\PA.Core.Infrastructure.csproj">
+      <Project>{116234F4-0024-448B-8ECF-2A122D80058B}</Project>
+      <Name>PA.Core.Infrastructure</Name>
     </ProjectReference>
     <ProjectReference Include="..\PA.IoC.Container\PA.IoC.Container.csproj">
       <Project>{3f27b915-1eb6-421c-bba9-2197727787b1}</Project>
       <Name>PA.IoC.Container</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ProductApplication.Model\PA.DataModel.csproj">
+    <ProjectReference Include="..\ProductApplication.Model\PA.Core.DataModel.csproj">
       <Project>{88A02733-F1EC-49A7-9D40-53D1160A6646}</Project>
-      <Name>PA.DataModel</Name>
+      <Name>PA.Core.DataModel</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

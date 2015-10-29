@@ -1,9 +1,9 @@
 ﻿using System.Data.Entity;
 using Ninject.Modules;
 using Ninject.Web.Common;
+using PA.Core.DataModel.Context;
 using PA.Data.Access.Repositories;
 using PA.Data.Interfaces;
-using PA.DataModel.Context;
 
 namespace PA.IoC.Container.Modules
 {

@@ -1,6 +1,6 @@
 using System.Data.Entity.Migrations;
 
-namespace PA.DataModel.Migrations
+namespace PA.Core.DataModel.Migrations
 {
     public partial class CreateProductTable : DbMigration
     {
